@@ -4,18 +4,11 @@
 //========================================================================
 int main() {
 
-#ifdef TARGET_OPENGLES
-	ofGLESWindowSettings settings;
-	settings.glesVersion = 2;
-	settings.windowMode = OF_FULLSCREEN;
-	ofCreateWindow(settings);
-#else
+	// setup the GL context
         ofGLFWWindowSettings settings;
-        settings.glesVersion = 2;
-        settings.windowMode = OF_FULLSCREEN;
         settings.numSamples = 0;
-        ofCreateWindow(settings);                       // <-------- setup the GL context
-#endif
+        settings.windowMode = OF_FULLSCREEN;
+        ofCreateWindow(settings);
 
         // this kicks off the running of my app
         // can be OF_WINDOW or OF_FULLSCREEN

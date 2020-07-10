@@ -4,6 +4,7 @@
 //========================================================================
 int main() {
 
+	// setup the GL context
 	ofGLESWindowSettings settings;
 	settings.glesVersion = 2;
 	settings.windowMode = OF_FULLSCREEN;

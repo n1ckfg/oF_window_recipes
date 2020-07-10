@@ -4,6 +4,7 @@
 //========================================================================
 int main() {
 
+	// setup the GL context
 #ifdef TARGET_OPENGLES
 	ofGLESWindowSettings settings;
 	settings.glesVersion = 2;
