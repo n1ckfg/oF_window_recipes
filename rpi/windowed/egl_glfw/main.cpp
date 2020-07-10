@@ -8,14 +8,12 @@ int main() {
 #ifdef TARGET_OPENGLES
 	ofGLESWindowSettings settings;
 	settings.glesVersion = 2;
-	settings.width = 1280;
-	settings.height = 720;
+	settings.setSize(1280, 720);
 	ofCreateWindow(settings);
 #else
         ofGLFWWindowSettings settings;
         settings.numSamples = 0;
-	settings.width = 1280;
-	settings.height = 720;
+	settings.setSize(1280, 720);
         ofCreateWindow(settings);                       
 #endif
 
